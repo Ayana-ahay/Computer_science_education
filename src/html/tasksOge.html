@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания ОГЭ</title>
+
+    <!-- подключение шрифтов  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Здесь ../ указывает на переход на уровень выше текущей директории -->
+    <link rel="stylesheet" href="../styles/styleTasksOge.css"> 
+</head>
+<body class="body">
+    <header class="page-header">
+        <div class="page-header__container">
+            <a href="index.html" class="page-header__logo">
+                <img src="../assets/svg-sprite/logo.svg" class="page-header__logo-img" alt="img">
+            </a>
+            <a href="index.html" class="page-header__title">InfoEdu</a>
+            <nav class="page-header__nav">
+                <ul class="topmenu">
+                    <li><a href="#" class="page-header__nav-link">соревнования</a></li>
+                    <li><a href="#" class="page-header__nav-link">банк заданий</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="submenu-link">ЕГЭ</a></li>
+                            <li><a href="#" class="submenu-link">ОГЭ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#" class="page-header__nav-link">о нас</a></li>
+                    <li><a href="#" class="page-header__nav-link">личный кабинет</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="submenu-link">Профиль</a></li>
+                            <li><a href="#" class="submenu-link">Рейтинг</a></li>
+                            <li><a href="#" class="submenu-link">Выход</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="home">
+            <header class="main-header">
+                <h1 class="main-header__title">Тренировочные варианты ОГЭ</h1>
+
+                <div class="main-header__options">
+                    <a href="#" class="page-header__nav-link">вариант 1</a>
+                    <a href="#" class="page-header__nav-link">вариант 2</a>
+                    <a href="#" class="page-header__nav-link">вариант 3</a>
+                    <a href="#" class="page-header__nav-link">вариант 4</a>
+                    <a href="#" class="page-header__nav-link">вариант 5</a>
+                    <a href="#" class="page-header__nav-link">вариант 6</a>
+                </div>
+
+                <div class="main-header__options--personality">
+                    <a href="#" class="page-header__nav-link">персональный вариант</a>
+                    <a href="#" class="page-header__nav-link">случайный вариант</a>
+                </div>
+
+                <div class="ConstructorList">
+                    <div class="ConstructorList__label">
+                        <div class="ConstructorList__label-text">Краткий ответ</div>
+                    </div>
+
+                    <div class="ConstructorList__label-Row">
+                        <div class="ConstructorList__label-Counter">
+                            <button id="Counter-Button_decrement">−</button>
+                            <input type="Counter-Input" id="count" value="0">
+                            <button id="Counter-Button_increment">+</button>
+                        </div>
+
+                        <div class="ConstructorList__label-topic">
+                            <div class="tasks">
+                                <details>
+                                    <summary>1. Количественные параметры информационных объектов</summary>
+                                    <div class="tasks__container">
+                                        <label for="probtheme1">
+                                            <input type="checkbox" id="probtheme1" name="probtheme1" checked>
+                                            Кодировка, в которой каждый символ кодируется 8 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme2">
+                                            <input type="checkbox" id="probtheme2" name="probtheme2" checked>
+                                            Кодировка, в которой каждый символ кодируется 16 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme3">
+                                            <input type="checkbox" id="probtheme3" name="probtheme3" checked>
+                                            Кодировка, в которой каждый символ кодируется 32 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme4">
+                                            <input type="checkbox" id="probtheme4" name="probtheme4" checked>
+                                            Разные задачи <br>
+                                        </label>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ConstructorList__label-Row">
+                        <div class="ConstructorList__label-Counter">
+                            <button id="Counter-Button_decrement">−</button>
+                            <input type="Counter-Input" id="count" value="0">
+                            <button id="Counter-Button_increment">+</button>
+                        </div>
+
+                        <div class="ConstructorList__label-topic">
+                            <div class="tasks">
+                                <details>
+                                    <summary>1. Количественные параметры информационных объектов</summary>
+                                    <div class="tasks__container">
+                                        <label for="probtheme1">
+                                            <input type="checkbox" id="probtheme1" name="probtheme1" checked>
+                                            Кодировка, в которой каждый символ кодируется 8 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme2">
+                                            <input type="checkbox" id="probtheme2" name="probtheme2" checked>
+                                            Кодировка, в которой каждый символ кодируется 16 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme3">
+                                            <input type="checkbox" id="probtheme3" name="probtheme3" checked>
+                                            Кодировка, в которой каждый символ кодируется 32 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme4">
+                                            <input type="checkbox" id="probtheme4" name="probtheme4" checked>
+                                            Разные задачи <br>
+                                        </label>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ConstructorList__label-Row">
+                        <div class="ConstructorList__label-Counter">
+                            <button id="Counter-Button_decrement">−</button>
+                            <input type="Counter-Input" id="count" value="0">
+                            <button id="Counter-Button_increment">+</button>
+                        </div>
+
+                        <div class="ConstructorList__label-topic">
+                            <div class="tasks">
+                                <details>
+                                    <summary>1. Количественные параметры информационных объектов</summary>
+                                    <div class="tasks__container">
+                                        <label for="probtheme1">
+                                            <input type="checkbox" id="probtheme1" name="probtheme1" checked>
+                                            Кодировка, в которой каждый символ кодируется 8 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme2">
+                                            <input type="checkbox" id="probtheme2" name="probtheme2" checked>
+                                            Кодировка, в которой каждый символ кодируется 16 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme3">
+                                            <input type="checkbox" id="probtheme3" name="probtheme3" checked>
+                                            Кодировка, в которой каждый символ кодируется 32 битами <br>
+                                        </label>
+    
+                                        <label for="probtheme4">
+                                            <input type="checkbox" id="probtheme4" name="probtheme4" checked>
+                                            Разные задачи <br>
+                                        </label>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </header>
+        </div>
+    </main>
+
+    <script src="../scripts/dev/tasksOge.js"></script> <!-- каунтер для заданий -->
+</body>
+</html>

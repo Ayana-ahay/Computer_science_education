@@ -1,0 +1,222 @@
+.body {
+    font-family: "Inter", bold;
+    /* background: linear-gradient(180deg, rgba(255, 249, 229, 1) 0%, rgba(239, 210, 255, 1) 100%); */
+    background-color: #EFCEFF;
+    /* background-color: #FFF9E5; */
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 245, 233, 0.95);
+    @supports (backdrop-filter: blur(10px)) {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 245, 233, 0.95);
+    }
+}
+
+.page-header__container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    padding-left: 40px;
+    padding-right: 40px;  /* 1920 - 293 - 293 + 20 + 20 */
+    max-width: 1414px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+    background-color: #FFF9E5;
+}
+  
+.page-header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.page-header__nav-link {
+    box-sizing: border-box;
+    background-color: #EFCEFF;
+    border: 1px solid #8215D8; 
+    padding: 6px 15px;
+    border-radius: 5px;
+
+    color: #8215D8;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    
+}
+
+.page-header__nav-link:hover {
+    color: #5F109D;
+}
+
+.page-header__nav li {
+    list-style: none; 
+   
+}
+
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 30px; /* 30 - половина расстояния между словами */
+}
+
+/* .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 70%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+
+    padding-inline-start: unset;
+    box-sizing: border-box;
+    border: 1px solid #5F109D; 
+} */
+
+.submenu {
+    position: absolute;
+    top: 120%;
+    /* left: 15%; */
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+
+    padding-inline-start: unset;
+    box-sizing: border-box;
+    border: 1px solid #5F109D; 
+    border-radius: 5px;
+    text-align: center;
+}
+
+.page-header__nav .submenu {
+    transform: translate(-50%, 0);
+    background: #EFCEFF;
+}
+
+.page-header__nav .submenu {
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: #EFCEFF;
+}
+
+.page-header__nav li:hover .submenu {
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.submenu-link {
+    text-decoration: none;
+}
+
+.submenu-link:hover {
+    color: #8215D8;
+}
+
+.page-header__logo {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding-right: 100px;
+}
+  
+.page-header__logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #8215D8;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+
+
+.main-header {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1210px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: calc(100% - 100px); /* Вычесть высоту header */
+    padding-top: 140px; /* Размер header 100*/
+
+    /* background-color: #EFCEFF; */
+}
+
+.main-header__leftpart {
+    display: flex;
+    width: 60%;
+}
+
+.main-header__rightpart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+/* .frameVector1 {
+    position: absolute;
+    border-radius: 5px;
+} */
+
+.main-header__text {
+    background-image: url('../assets/svg-sprite/mainPicVector.svg');
+    background-size: 100% 100%;;
+    position: absolute;
+    font-weight: 700;
+    
+    padding: 45px;
+}
+
+.main-header__text1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.main-header__text2 {
+    font-size: 24px;
+    padding-bottom: 45px;
+    margin-top: 23px;
+}
