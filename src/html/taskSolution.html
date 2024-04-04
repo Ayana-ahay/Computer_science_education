@@ -48,88 +48,8 @@
     <main class="page-main">
         <div class="home">
             <header class="main-header">
-                <div class="columnleft blockcolumn  has-blocks ">
-                    <section data-region="blocks-column" class="d-print-none" aria-label="Блоки">
-                        <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1">
-                            <section id="mod_quiz_navblock" class="block block_fake  card mb-3" role="navigation" data-block="_fake" data-instance-id="fakeid-660da362ec0e8" aria-labelledby="instance-fakeid-660da362ec0e8-header">
-                                <div class="card-body p-3">
-                                    <h5 id="instance-fakeid-660da362ec0e8-header" class="card-title d-inline">Навигация по тесту</h5>
-                                    <div class="card-text content mt-3">
-                                        <div class="qn_buttons clearfix multipages">
-                                            <a class="qnbutton" data-quiz-page="{{number}}" href="{{link}}">
-                                                <span class="thispageholder"></span>
-                                                <span class="trafficlight"></span>
-                                                <span class="accesshide">Вопрос </span>{{question}}<span class="accesshide"> Эта страница <span class="flagstate"></span></span>
-                                            </a>
-                                        </div>
-                                        <div class="othernav">
-                                            <a href="https://sdo.tusur.ru/mod/quiz/review.php?attempt=1046736&cmid=210572">Отображать все вопросы на одной странице</a>
-                                            <a class="mod_quiz-next-nav" href="https://sdo.tusur.ru/mod/quiz/view.php?id=210572">Закончить обзор</a>
-                                        </div>
-                                        <div class="footer"></div>
-                                    </div>
-                                </div>
-                            </section>
-                        </aside>
-                    </section>
-                </div>
                 
-                <script>
-                    // Generate links for the navigation buttons
-                    const quizNavButtons = document.querySelectorAll('.qnbutton');
-                    quizNavButtons.forEach((button, index) => {
-                        const pageNumber = index;
-                        const pageLink = `https://sdo.tusur.ru/mod/quiz/review.php?attempt=1046736&cmid=210572&page=${pageNumber}`;
-                        const questionNumber = index + 1;
-                        button.setAttribute('href', pageLink);
-                        button.querySelector('.accesshide:nth-child(2)').innerText = questionNumber;
-                    });
-                </script>
-                
-                <!-- <div class="columnleft blockcolumn  has-blocks ">
-                    <section data-region="blocks-column" class="d-print-none" aria-label="Блоки">
-                        <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1">
-                            <a href="#sb-1" class="sr-only sr-only-focusable">Пропустить Навигация по тесту</a>
-    
-        <section id="mod_quiz_navblock" class=" block block_fake  card mb-3" role="navigation" data-block="_fake" data-instance-id="fakeid-660da362ec0e8" aria-labelledby="instance-fakeid-660da362ec0e8-header">
-        
-            <div class="card-body p-3">
-        
-                    <h5 id="instance-fakeid-660da362ec0e8-header" class="card-title d-inline">Навигация по тесту</h5>
-        
-        
-                <div class="card-text content mt-3">
-                    <div class="qn_buttons clearfix multipages">
-                        <a class="qnbutton correct free btn thispage" id="quiznavbutton15" title="Верно" data-quiz-page="0" href="#question-1214182-15">
-                            <span class="thispageholder"></span>
-                            <span class="trafficlight"></span>
-                            <span class="accesshide">Вопрос </span>1<span class="accesshide"> Эта страница <span class="flagstate"></span></span>
-                        </a>
-                        <a class="qnbutton correct free btn" id="quiznavbutton4" title="Верно" data-quiz-page="1" href="https://sdo.tusur.ru/mod/quiz/review.php?attempt=1046736&amp;cmid=210572&amp;page=1#">
-                            <span class="thispageholder"></span>
-                            <span class="trafficlight"></span>
-                            <span class="accesshide">Вопрос </span>2<span class="accesshide"> <span class="flagstate"></span></span>
-                        </a>
-                        
-                        <a class="qnbutton correct free btn" id="quiznavbutton16" title="Верно" data-quiz-page="2" href="https://sdo.tusur.ru/mod/quiz/review.php?attempt=1046736&amp;cmid=210572&amp;page=2#">
-                            <span class="thispageholder"></span>
-                            <span class="trafficlight"></span>
-                            <span class="accesshide">Вопрос </span>3<span class="accesshide"> <span class="flagstate"></span></span>
-                        </a>
-                        
-                    
-                    </div><div class="othernav"><a href="https://sdo.tusur.ru/mod/quiz/review.php?attempt=1046736&amp;cmid=210572">Отображать все вопросы на одной странице</a><a class="mod_quiz-next-nav" href="https://sdo.tusur.ru/mod/quiz/view.php?id=210572">Закончить обзор</a></div>
-                    <div class="footer"></div>
-                    
-                </div>
-        
-            </div>
-        
-        </section>
-    
-      <span id="sb-1"></span></aside>
-                    </section>
-                </div> -->
+                 
             </header>
         </div>
     </main>
